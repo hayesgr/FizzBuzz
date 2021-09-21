@@ -16,10 +16,10 @@ void fb (int i){
 void fb2(int i){
     (((i%3==0)?tout("Fizz"):i)&((i%5==0)?tout("Buzz"):i))!=0?tout(std::to_string(i)+"\n"):tout("\n");
 }
-/*
+
 //Does not require functions at top
-//This is the absolute worst means of solving this.
-//There are always better options to using "else"
+//This is one of the worst ways to solve this problem.
+//There are always better options to using "else if"
 int main(){
     for(auto i=1;i<100;i++){
         //if(!(i%3) && !(i%5)) //would be better than using "==0"
@@ -42,7 +42,7 @@ int main(){
     }
     return 0;
 }
-*/
+
 /*
 //This solution is better than the previous version in both performance and ability to maintain code.
 //Does not require the functions at the top
